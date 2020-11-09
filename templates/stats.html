@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../static/css/style.css" th:href="@{/css/style.css}"/>
+    <script src="../static/js/main.js" th:src="@{/js/main.js}"></script>
+    <title>Stats</title>
+</head>
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../static/css/style.css" th:href="@{/css/style.css}"/>
+    <script src="../static/js/main.js" th:src="@{/js/main.js}"></script>
+    <title>Stats</title>
+</head>
+<body>
+
+<main>
+    <header>
+        <div id="statsPic">
+            <img src="../static/images/arsenal.jpg" th:src="@{/images/arsenal.jpg}" alt="stats banner"/>
+        </div>
+        <h2>Stats</h2>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html" th:href="@{/}">Home</a></li>
+            <div class="dropdown">
+                <li>
+                    <a onclick="show_menu()" class="dropdownlink">Pages</a>
+                </li>
+                <div id="pages" class="menuitems">
+                    <li><a href="fixtures.html" th:href="@{/fixtures}">Fixtures</a></li>
+                    <li><a href="stats.html" th:href="@{/stats}">Stats</a></li>
+                    <li><a href="news.html" th:href="@{/news}">News</a></li>
+                </div>
+            </div>
+            <li><a href="register.html" th:href="@{/register}">Register</a></li>
+            <li><a href="book.html" th:href="@{/book}">Book Tickets</a></li>
+            <li><a href="profile.html" th:href="@{/profile}">Profile</a></li>
+        </ul>
+
+    </nav>
+    <article>
+        <section>
+        <table class="dc_table_s3 fixture-table" summary="Score Table" style="width:100%;" >
+            <caption>
+                <h3>Top Scorers</h3>
+            </caption>
+            <thead>
+            <tr>
+                <th scope="col">Name</th>
+                <th scope="col">Nation</th>
+                <th scope="col">Height</th>
+                <th scope="col">Number</th>
+                <th scope="col">Goals</th>
+                <th scope="col">...</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Pierre-Emerick Aubameyang</td>
+                <td>Gabon</td>
+                <td>187cm</td>
+                <td>14</td>
+                <td>22</td>
+                <td><a href="https://en.wikipedia.org/wiki/Pierre-Emerick_Aubameyang">details</a></td>
+            </tr>
+            <tr class="odd">
+                <td>Alexandre Lacazette</td>
+                <td>France</td>
+                <td>175cm</td>
+                <td>9</td>
+                <td>15</td>
+                <td><a href="https://en.wikipedia.org/wiki/Alexandre_Lacazette">details</a></td>
+            </tr>
+            <tr >
+                <td>Henrikh Mkhitaryan</td>
+                <td>Armenia</td>
+                <td>177cm</td>
+                <td>22</td>
+                <td>7</td>
+                <td><a href="https://en.wikipedia.org/wiki/Henrikh_Mkhitaryan">details</a></td>
+            </tr>
+            </tbody>
+        </table>
+        </section>
+        <section>
+        <table class="dc_table_s4 fixture-table" summary="Assist Table" style="width:100%;">
+            <caption>
+                <h3>Top Assist Providers</h3>
+            </caption>
+            <thead>
+            <tr>
+                <th scope="col">Name</th>
+                <th scope="col">Nationality</th>
+                <th scope="col">Height</th>
+                <th scope="col">Number</th>
+                <th scope="col">Assists</th>
+                <th scope="col">...</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+            <tr class="odd">
+                <td>Alexandre Lacazette</td>
+                <td>France</td>
+                <td>175cm</td>
+                <td>9</td>
+                <td>7</td>
+                <td><a href="https://en.wikipedia.org/wiki/Alexandre_Lacazette">details</a></td>
+            </tr>
+            <tr>
+                <td>Aaron Ramsey</td>
+                <td>Wales</td>
+                <td>178cm</td>
+                <td>8</td>
+                <td>6</td>
+                <td><a href="https://en.wikipedia.org/wiki/Aaron_Ramsey">details</a></td>
+            </tr>
+            <tr class="odd">
+                <td>Héctor Bellerín</td>
+                <td>Gabon</td>
+                <td>187cm</td>
+                <td>14</td>
+                <td>22</td>
+                <td><a href="https://en.wikipedia.org/wiki/H%C3%A9ctor_Beller%C3%ADn">details</a></td>
+            </tr>
+            </tbody>
+        </table>
+        </section>
+        <section>
+            <h3>Club stats</h3>
+            <ul>
+                <li>Record: 19-6-6, 63 points (2.03 per game), 3rd in Premier League (1st Tier)</li>
+
+                <li> Home Record: 44 points (14-2-1) Away Record: 19 points (5-4-5)</li>
+
+                <li>Goals: 65 (2.10 per game), Goals Against: 39 (1.26 per game), Diff: 26</li>
+            </ul>
+        </section>
+        <section>
+            <h3>Interesting stats</h3>
+            <ul>
+                <li>Arsenal have won 10 consecutive home league games within the same season for the
+                    first since May 1998.</li>
+                <li>Arsenal are unbeaten in their last 38 Premier League home games in which they've
+                    scored the first goal (W36 D2) since a 3-4 loss against Liverpool in August 2016.</li>
+                <li>Arsenal have won all five of their Premier League games on April 1st by an
+                    aggregate score of 19-2.</li>
+            </ul>
+        </section>
+        <p>Sources: SkySports, OptaJoe</p>
+    </article>
+
+        <footer>
+            <div>
+                <h3>Contact Us</h3>
+                <p>7 Barnrbough, Camden Street<br />
+                    London, NW1 0HL<br />
+                    UK<br />
+                    <br />
+                    Phone: 07397560223<br />
+                    <br />
+                    &copy; K. Kirosingh 2019 <br/>
+                </p>
+            </div>
+        </footer>
+</main>
+</body>
+</html>
+

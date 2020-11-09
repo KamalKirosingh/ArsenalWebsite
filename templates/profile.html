@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../static/css/style.css" th:href="@{/css/style.css}"/>
+    <script src="../static/js/main.js" th:src="@{/js/main.js}"></script>
+    <title>Profile</title>
+</head>
+<body>
+
+<main>
+    <header>
+        <div id="henryPic">
+            <img src="../static/images/henry.jpg" th:src="@{/images/henry.jpg}" alt="king"/>
+        </div>
+        <h2>Profile</h2>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html" th:href="@{/}">Home</a></li>
+            <div class="dropdown">
+                <li>
+                    <a onclick="show_menu()" class="dropdownlink">Pages</a>
+                </li>
+                <div id="pages" class="menuitems">
+                    <li><a href="fixtures.html" th:href="@{/fixtures}">Fixtures</a></li>
+                    <li><a href="stats.html" th:href="@{/stats}">Stats</a></li>
+                    <li><a href="news.html" th:href="@{/news}">News</a></li>
+                </div>
+            </div>
+            <li><a href="register.html" th:href="@{/register}">Register</a></li>
+            <li><a href="book.html" th:href="@{/book}">Book Tickets</a></li>
+            <li><a href="profile.html" th:href="@{/profile}">Profile</a></li>
+        </ul>
+
+    </nav>
+
+    <article>
+        <table>
+            <tr>
+                <td>First Name:</td>
+                <td th:text="${collatedUser.getOperaUser().firstName}">Kamal</td>
+            </tr>
+            <tr>
+                <td>Last Name:</td>
+                <td th:text="${collatedUser.getOperaUser().lastName}">Kirosingh</td>
+            </tr>
+            <tr>
+                <td>Email:</td>
+                <td th:text="${collatedUser.getOperaUser().email}">kamal@company.com</td>
+            </tr>
+
+        </table>
+
+        <table>
+            <tr>
+                <th>Section</th>
+                <th>Number of Tickets</th>
+            </tr>
+            <tr th:each="booking : ${collatedUser.bookings}">
+                <td th:text="${booking.opera}" >Clock End</td>
+                <td th:text="${booking.quantity}" >2</td>
+            </tr>
+        </table>
+        <br />
+        <br />
+        <table>
+            <tr>
+                <th>Login History</th>
+            </tr>
+            <tr th:each="login : ${collatedUser.logins}">
+                <td th:text="${login.time}">1st March 2019</td>
+            </tr>
+        </table>
+
+    </article>
+
+    <footer>
+        <div>
+            <h3>Contact Us</h3>
+            <p>7 Barnrbough, Camden Street<br />
+                London, NW1 0HL<br />
+                UK<br />
+                <br />
+                Phone: 07397560223<br />
+                <br />
+                &copy; K. Kirosingh 2019 <br/>
+            </p>
+
+        </div>
+    </footer>
+</main>
+</body>
+</html>

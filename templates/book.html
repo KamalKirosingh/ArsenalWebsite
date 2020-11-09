@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../static/css/style.css" th:href="@{/css/style.css}"/>
+    <script src="../static/js/main.js" th:src="@{/js/main.js}"></script>
+    <title>ArsenalMania</title>
+</head>
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../static/css/style.css" th:href="@{/css/style.css}"/>
+    <script src="../static/js/main.js" th:src="@{/js/main.js}"></script>
+    <title>Booking</title>
+</head>
+<body>
+
+<main>
+    <header>
+        <div id="bookPic">
+            <img src="../static/images/emirates.jpg" th:src="@{/images/emirates.jpg}" alt="stadium"/>
+        </div>
+        <h2>Booking</h2>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html" th:href="@{/}">Home</a></li>
+            <div class="dropdown">
+                <li>
+                    <a onclick="show_menu()" class="dropdownlink">Pages</a>
+                </li>
+                <div id="pages" class="menuitems">
+                    <li><a href="fixtures.html" th:href="@{/fixtures}">Fixtures</a></li>
+                    <li><a href="stats.html" th:href="@{/stats}">Stats</a></li>
+                    <li><a href="news.html" th:href="@{/news}">News</a></li>
+                </div>
+            </div>
+            <li><a href="register.html" th:href="@{/register}">Register</a></li>
+            <li><a href="book.html" th:href="@{/book}">Book Tickets</a></li>
+            <li><a href="profile.html" th:href="@{/profile}">Profile</a></li>
+        </ul>
+
+
+    </nav>
+    <article>
+        <form th:action="@{book}" method="post" th:object="${booking}">
+            <fieldset>
+                <legend>Booking</legend>
+                <table>
+                    <tr>
+                        <td><label for="Section">Section:</label> </td>
+                        <td><select id="section"required="required" th:field="*{opera}">
+                            <option value="North Bank">North Bank</option>
+                            <option value="East Stand">East Stand</option>
+                            <option value="Clock End">Clock End</option>
+                            <option value="West Stand">West Stand</option>
+                        </select></td>
+                    </tr>
+                    <tr>
+                        <td><label for="qty">Number of Tickets</label></td>
+                        <td><input id="qty"type="number" min="1" max="10" th:field="*{quantity}" /></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input type="submit" value="Book" /></td>
+                    </tr>
+                </table>
+            </fieldset>
+        </form>
+    </article>
+    <section class="book">
+        <div id="stadiumPic">
+        <img src="../static/images/stadium.png" th:src="@{/images/stadium.png}" alt="Arsenal stadium"/>
+        </div>
+    </section>
+    <footer>
+        <div>
+            <h3>Contact Us</h3>
+            <p>7 Barnrbough, Camden Street<br />
+                London, NW1 0HL<br />
+                UK<br />
+                <br />
+                Phone: 07397560223<br />
+                <br />
+                &copy; K. Kirosingh 2019 <br/>
+            </p>
+
+        </div>
+    </footer>
+</main>
+</body>
+</html>

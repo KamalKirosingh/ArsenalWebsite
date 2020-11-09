@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../static/css/style.css" th:href="@{/css/style.css}"/>
+    <script src="../static/js/main.js" th:src="@{/js/main.js}"></script>
+    <title>News</title>
+</head>
+<body>
+
+<main>
+    <header>
+        <div id="emeryPic">
+        <img src="../static/images/emery.jpg" th:src="@{/images/emery.jpg}" alt="emery banner"/>
+        </div>
+        <h2>News</h2>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html" th:href="@{/}">Home</a></li>
+            <div class="dropdown">
+                <li>
+                    <a onclick="show_menu()" class="dropdownlink">Pages</a>
+                </li>
+                <div id="pages" class="menuitems">
+                    <li><a href="fixtures.html" th:href="@{/fixtures}">Fixtures</a></li>
+                    <li><a href="stats.html" th:href="@{/stats}">Stats</a></li>
+                    <li><a href="news.html" th:href="@{/news}">News</a></li>
+                </div>
+            </div>
+            <li><a href="register.html" th:href="@{/register}">Register</a></li>
+            <li><a href="book.html" th:href="@{/book}">Book Tickets</a></li>
+            <li><a href="profile.html" th:href="@{/profile}">Profile</a></li>
+        </ul>
+
+    </nav>
+    <article>
+        <section>
+        <h3>Latest News</h3>
+            <div id="newPic">
+                <img src="../static/images/newcastle.jpg" th:src="@{/images/newcastle.jpg}" alt="newcastle"/>
+            </div>
+        <h3>Arsenal vs Newcastle result: Aaron Ramsey and Alexandre Lacazette send Gunners third</h3>
+        <p>It was a performance of intensity and cool authority that will have caused considerable anxiety
+            to Mauricio Pochettino, Ole Gunnar Solskjaer and Maurizio Sarri. With just seven matches of the
+            season remaining Arsenal sit third in the Premier League table, two points clear of Tottenham
+            and Manchester United, this confident 2-0 victory putting Unai Emery’s team firmly in control of
+            their Champions League destiny.</p>
+
+        <p>They have every right to feel confident. At the start of February, Arsenal languished ten points
+            behind a title-challenging Tottenham. Now they sit two ahead. They will need to adapt the chant.
+            Sunday’s trip to Goodison is perhaps their hardest remaining match, with Spurs still to visit Manchester City. </p>
+
+        <p> With an eminently winnable set of fixtures ahead of them, a place in next season’s Champions League is now Arsenal’s to lose.</p>
+            <p>Source: Guardian</p>
+    </section>
+        <section>
+            <h3>Transfer News</h3>
+            <div id="transferPic">
+                <img src="../static/images/umtiti.jpg" th:src="@{/images/umtiti.jpg}" alt="umtiti"/>
+            </div>
+            <h3>David Alaba and Samuel Umtiti are two main names on Arsenal's list of summer transfer targets.</h3>
+
+            <p>The club want to bring in up to five signings in the close-season to set up Unai Emery for a title
+                challenge, and the feeling is deals can be done for both, who would represent significant coups. </p>
+
+            <p>Although Alaba and Umtiti have been influential starters for the respective clubs - Bayern Munich
+                and Barcelona - over the last few seasons, changed circumstances would mean both are at least
+                willing to look at the possibility of deals. </p>
+
+            <p>Bayern are in the process of a huge overhaul of their squad for next season, with an expected
+                outlay of around €300m, but that will necessitate a clear-out of some long-term fixtures. </p>
+
+            <p>Alaba would not be close to the top of the list for potential exits, but there is a sense the
+                German club would be open to talks. The Austrian himself recently talked up his boyhood support
+                for Arsenal.</p>
+            <p>Source: Independent</p>
+        </section>
+    </article>
+    <footer>
+        <div>
+            <h3>Contact Us</h3>
+            <p>7 Barnrbough, Camden Street<br />
+                London, NW1 0HL<br />
+                UK<br />
+                <br />
+                <br />
+                Phone: 07397560223<br />
+                <br />
+                &copy; K. Kirosingh 2019 <br/>
+            </p>
+
+        </div>
+    </footer>
+</main>
+</body>
+</html>

@@ -1,0 +1,12 @@
+2019-03-21 20:47:30 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "TRUNCATE TABLEOPERA_USER[*]  OPERA_USER "; expected "TABLE"; SQL statement:
+truncate tableOPERA_USER  OPERA_USER [42001-197]
+2019-04-01 02:04:18 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Data conversion error converting "'North Bank' (BOOKING: SECTION INTEGER)"; SQL statement:
+insert into booking (email, quantity, section, key) values (?, ?, ?, ?) -- (?1, ?2, ?3, ?4) [22018-197]
+2019-04-01 03:17:03 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Data conversion error converting "'North Bank' (BOOKING: SECTION INTEGER)"; SQL statement:
+insert into booking (email, quantity, section, key) values (?, ?, ?, ?) -- (?1, ?2, ?3, ?4) [22018-197]
+2019-04-01 11:40:04 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Data conversion error converting "'Clock End' (BOOKING: SECTION INTEGER)"; SQL statement:
+insert into booking (email, quantity, section, key) values (?, ?, ?, ?) -- (?1, ?2, ?3, ?4) [22018-197]

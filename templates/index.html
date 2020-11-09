@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../static/css/style.css" th:href="@{/css/style.css}"/>
+    <script src="../static/js/main.js" th:src="@{/js/main.js}"></script>
+    <title>ArsenalMania</title>
+</head>
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../static/css/style.css" th:href="@{/css/style.css}"/>
+    <script src="../static/js/main.js" th:src="@{/js/main.js}"></script>
+    <title>ArsenalMania</title>
+</head>
+<body>
+
+<main>
+    <header>
+        <img src="../static/images/main.jpg" th:src="@{/images/main.jpg}" alt="arsenal banner"/>
+        <h2>Arsenal Mania</h2>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html" th:href="@{/}">Home</a></li>
+            <div class="dropdown">
+                <li>
+                    <a onclick="show_menu()" class="dropdownlink">Pages</a>
+                </li>
+                <div id="pages" class="menuitems">
+                    <li><a href="fixtures.html" th:href="@{/fixtures}">Fixtures</a></li>
+                    <li><a href="stats.html" th:href="@{/stats}">Stats</a></li>
+                    <li><a href="news.html" th:href="@{/news}">News</a></li>
+                </div>
+            </div>
+            <li><a href="register.html" th:href="@{/register}">Register</a></li>
+            <li><a href="book.html" th:href="@{/book}">Book Tickets</a></li>
+            <li><a href="profile.html" th:href="@{/profile}">Profile</a></li>
+        </ul>
+
+    </nav>
+    <article>
+
+        <p>ArsenalMania is one of the fastest growing websites on fandom-focused sports sites on the Internet.</p>
+
+        <p>At ArsenalMania, we believe that football is a living art form able to connect to people from all parts
+            of
+            our society.</p>
+
+        <p>our website consists of a dedicated team of football analysts and software developers
+            with backgrounds in the sector, based in Central London. We have taken on the responsibility of
+            providing you with valuable and unique content about a club we all love and are passionate about. </p>
+
+        <p>this site is also the number one place Arsenal fans go to for buying tickets.</p>
+
+        <p> We are a unique website and one of the fastest growing in the sports industry,
+            specialising in the in-depth analysis of detailed football data. Provided with unique stats,
+            we compile and create comprehensive analysis on the recent arsenal fixtures. </p>
+
+
+        <p>We are a world-class national company recognised internationally for the standard of our work.</p>
+
+        <h3>Main Features</h3>
+
+        <h4>Scores</h4>
+        <ul>
+            <li>goal scorers</li>
+            <li>assist providers</li>
+            <li>substitutions</li>
+        </ul>
+         <h3>Stats</h3>
+        <ul>
+            <li>Detailed statistics for Arsenal performances using Opta</li>
+        </ul>
+        <h3>news</h3>
+        <ul>
+            <li>news articles</li>
+            <li>transfer news</li>
+            <li>reports</li>
+        </ul>
+    </article>
+
+    <footer>
+        <div>
+            <h3>Contact Us</h3>
+            <p>7 Barnrbough, Camden Street<br />
+                London, NW1 0HL<br />
+                UK<br />
+                <br />
+                Phone: 07397560223<br />
+                <br />
+                &copy; K. Kirosingh 2019 <br/>
+            </p>
+
+        </div>
+    </footer>
+</main>
+</body>
+</html>
